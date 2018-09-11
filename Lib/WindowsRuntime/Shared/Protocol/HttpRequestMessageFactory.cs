@@ -43,7 +43,7 @@ namespace Microsoft.WindowsAzure.Storage.Shared.Protocol
 
             if (timeout.HasValue && timeout.Value > 0)
             {
-                builder.Add("timeout", timeout.ToString());
+                builder["timeout"] = timeout.ToString();
             }
 
 #if WINDOWS_RT && !NETCORE

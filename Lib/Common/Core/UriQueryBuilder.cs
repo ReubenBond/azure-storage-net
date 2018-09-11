@@ -75,6 +75,11 @@ namespace Microsoft.WindowsAzure.Storage.Core
                     throw new KeyNotFoundException(string.Format(CultureInfo.InvariantCulture, SR.QueryBuilderKeyNotFound, name));
                 }
             }
+
+            set
+            {
+                this.Parameters[name] = value;
+            }
         }
 
         /// <summary>

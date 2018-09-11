@@ -18,6 +18,11 @@ internal class UriQueryBuilder
         {
             throw new System.NotImplementedException();
         }
+        
+        set
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public UriQueryBuilder()

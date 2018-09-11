@@ -49,7 +49,7 @@ namespace Microsoft.WindowsAzure.Storage.Shared.Protocol
 
             if (timeout.HasValue && timeout.Value > 0)
             {
-                builder.Add("timeout", timeout.Value.ToString(CultureInfo.InvariantCulture));
+                builder["timeout"] = timeout.Value.ToString(CultureInfo.InvariantCulture);
             }
 
 #if WINDOWS_PHONE || !WINDOWS_DESKTOP
